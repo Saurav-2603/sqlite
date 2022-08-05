@@ -1,0 +1,46 @@
+version: "2.0"
+
+stories:
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info
+  - action: utter_id
+  - intent: id
+    entities:
+    - id: '3'
+  - slot_was_set:
+    - id: '3'
+  - action: utter_name
+  - intent: name
+    entities:
+    - name: harish
+  - slot_was_set:
+    - name: harish
+  - action: utter_email
+  - intent: email
+    entities:
+    - email: hari@gmail.com
+  - slot_was_set:
+    - email: hari@gmail.com
+  - action: utter_date
+  - intent: date
+    entities:
+    - date: '2011-03-17'
+  - slot_was_set:
+    - date: '2011-03-17'
+  - action: utter_salary
+  - intent: salary
+    entities:
+    - salary: '15000.50'
+  - slot_was_set:
+    - salary: '15000.50'
+  - action: action_hello_world
+  - intent: goodbye
+  - action: utter_goodbye
+- story: summary
+  steps:
+  - intent: select_query
+  - action: action_sum_query

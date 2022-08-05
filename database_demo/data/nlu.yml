@@ -1,0 +1,170 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: name
+  examples: |
+    - [harish](name)
+    - [hemant](name)
+    - [keshav](name)
+    - [harish](name)
+    - [rahul singh](name)
+    - [ravi singh](name)
+    - [kiran](name)
+    - [sai](name)
+    - [himanshu dutt](name)
+    - [akshay kumar](name)
+    - [ram prasad](name)
+    - [sony singh](name)
+    - [Narendra Modi](name)
+    - [Sandeep Dass](name)
+    - [Satya sri](name)
+    - [jeevan khan](name)
+    - [Srinivas Kumar](name)
+    - [rohith](name)
+    - [mohit](name)
+    - [arnav](name)
+    - [Shravan](name)
+    - [Harshith](name)
+    - [netra](name)
+    - [ram](name)
+    - [syed](name)
+    - [rahim](name)
+    - [shyam](name)
+    - [divya](name)
+    - [bharathi](name)
+    - [chinni](name)
+    - [kittu](name)
+    - [pavan](name)
+    - [radha](name)
+    - [radhika](name)
+    - [karan](name)
+    - [barjraj](name)
+    - [ramdin verma](name)
+- intent: email
+  examples: |
+    - [hari@gmail.com](email)
+    - [hemant@gmail.com](email)
+    - [keshav@gmail.com](email)
+    - [hari@gmail.com](email)
+- intent: id
+  examples: |
+    - [1](id)
+    - [2](id)
+    - [3](id)
+    - [4](id)
+    - [5](id)
+    - [6](id)
+    - [7](id)
+    - [8](id)
+    - [9](id)
+    - [10](id)
+    - [11](id)
+    - [12](id)
+- intent: salary
+  examples: |
+    - [18000.00](salary)
+    - [25000.50](salary)
+    - [15000.50](salary)
+    - [15000.50](salary)
+    - [1,80000.00](salary)
+    - [25,50000.50](salary)
+    - [115000.50](salary)
+    - [65000.50](salary)
+- intent: date
+  examples: |
+    - [2011-03-17](date)
+    - [2017-02-11](date)
+    - [2019-08-12](date)
+    - [2011-03-17](date)
+- intent: info
+  examples: |
+    - can i fill the database
+    - i want to fill the database
+    - database
+- intent: select_query
+  examples: |
+    - show me summary 
+    - summary
+    - summary of salary

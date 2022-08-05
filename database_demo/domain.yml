@@ -1,0 +1,79 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- bot_challenge
+- date
+- deny
+- email
+- goodbye
+- greet
+- id
+- info
+- mood_great
+- mood_unhappy
+- name
+- salary
+- select_query
+entities:
+- date
+- email
+- id
+- name
+- salary
+slots:
+  id:
+    type: any
+    influence_conversation: false
+  name:
+    type: any
+    influence_conversation: false
+  date:
+    type: any
+    influence_conversation: false
+  salary:
+    type: any
+    influence_conversation: false
+  email:
+    type: any
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_id:
+  - text: what is your id number.
+  utter_name:
+  - text: what is your name.
+  utter_email:
+  - text: what is your email.
+  utter_salary:
+  - text: what is your salary.
+  utter_date:
+  - text: what is your date of joining.
+  utter_query:
+actions:
+- action_hello_world
+- action_sum_query
+- utter_cheer_up
+- utter_date
+- utter_email
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_id
+- utter_name
+- utter_salary
